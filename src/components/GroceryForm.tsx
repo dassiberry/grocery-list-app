@@ -7,18 +7,19 @@ interface Props {
   onAddItem: (e: React.FormEvent) => void;
 }
 
+// grocery form component that allows users to input new items and add them to the list
 const GroceryForm: React.FunctionComponent<Props> = ({ inputValue, onInputChange, onAddItem }) => {
   return (
     <form onSubmit={onAddItem} className={styles.form}>
-      <input 
-        type="text" 
-        value={inputValue} 
-        onChange={onInputChange} 
-        placeholder="Add item..." 
+      <input
+        type="text"
+        value={inputValue}
+        onChange={onInputChange}
+        placeholder="Add item..."
         className={styles.input}
       />
-      <button className={styles.button} 
-              type="submit">Add</button>
+      <button className={styles.button}
+        type="submit">Add</button>
     </form>
   );
 };

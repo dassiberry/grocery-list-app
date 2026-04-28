@@ -7,10 +7,10 @@ interface Props {
   onToggle: (id: string) => void;
   onDelete: (id: string) => void;
 }
-
+// grocery item component that displays the item name and handles toggle and delete actions
 const GroceryItemComponent: React.FC<Props> = ({ item, onToggle, onDelete }) => (
   <li className={styles.itemRow}>
-    <span 
+    <span
       className={item.isBought ? styles.bought : styles.itemName}
       onClick={() => onToggle(item.id)}
     >
