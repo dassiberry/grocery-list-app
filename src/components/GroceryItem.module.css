@@ -1,0 +1,27 @@
+.itemRow {
+  display: flex;    
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 2px solid #cdf5b5;
+}
+
+.itemName { 
+  cursor: pointer; 
+}
+
+.bought {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.deleteBtn {
+  background: #ec7373;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.deleteBtn:hover {
+  border: black solid 1px;
+}
